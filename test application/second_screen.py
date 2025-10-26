@@ -74,6 +74,13 @@ class TestWin(QWidget):
 
 
     def next_click(self):
+        self.exp = Experiment(
+            int(self.line_age.text()), 
+            int(self.line_test1.text),
+            int(self.line_test2.text),
+            int(self.line_test3.text)
+        )
+        
         self.final_win = FinalWindow()
         self.hide()
 

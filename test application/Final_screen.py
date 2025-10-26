@@ -5,6 +5,13 @@ from PyQt5.QtWidgets import (
 
 from instr import *
 
+class Experiment():
+    def __init__(self, age, test1, test2, test3):
+        self.age = age
+        self.test1 = test1
+        self.test2 = test2
+        self.test3 = test3
+
 class FinalWindow(QWidget):
     def __init__(self):
         super().__init__()
